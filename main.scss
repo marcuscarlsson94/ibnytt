@@ -9,7 +9,7 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #f5f6f7;
+  background-color: #f7f7f7;
   font-family: 'Roboto Slab', sans-serif;
   font-weight: bold;
   font-size: $body-font-size;
@@ -45,6 +45,12 @@ h3 {
   margin: 10px 0;
 }
 
+h4 {
+  font-family: $h3-font;
+  color: $h3-text-color;
+  margin: 0;
+}
+
 p {
   font-family: $body-font;
   font-size: 16px;
@@ -57,7 +63,8 @@ section {
 }
 
 header {
-  background-color: #0e3a50;
+  // background-color: #0e3a50;
+  background-color: darken($blue, 5);
   width: 100%;
   height: 80px;
 }
@@ -129,7 +136,7 @@ HEADER
     }
 
     li {
-      color: $turqoise;
+      color: white;
       text-transform: uppercase;
       font-weight: normal;
     }
@@ -145,7 +152,6 @@ Second nav
   a {
     transition: 200ms ease all;
     padding: 18 30;
-    border-right: 1px solid #ececec;
 
     &:hover {
       background-color: #f5f6f7;
@@ -262,7 +268,7 @@ Articles
   padding: 12px 0;
   font-size: .9em;
   font-weight: normal;
-  // border-top: 1px solid #ececec;
+  border-top: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
 
   ul {
@@ -275,6 +281,67 @@ Articles
   }
 }
 
+.a-serie {
+
+  $a-img-size: 90px;
+
+  &-wrapper {
+    padding: 15px 45px 30px;;
+
+    a h4 {
+      font-size: 20px;
+      margin-left: 20px;
+    }
+  }
+
+  &-img {
+    height: $a-img-size;
+    width: $a-img-size;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+.puff {
+
+  &-wrapper {
+    width: 1000px;
+    height: 170px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: $shadow;
+    border-radius: 3px;
+  }
+
+  &-img {
+    width: 100px;
+    height: 100%;
+    background-size: contain;
+    flex: 2 0 25%;
+  }
+
+  h4 {
+    font-size: 30px;
+    margin-left: 20px;
+  }
+}
+
+
+
+
+/*====
+SIDEBAR
+======*/
+
+.sidebar {
+  margin-top: 10px;
+}
+
+
+
+
 
 
 /*====
@@ -283,7 +350,7 @@ FLEX COMPONENTS
 
 .f-col-md-8 {
   flex: 1 0 0;
-  padding: 0 15px;
+  padding-right: 15px;
 }
 
 .f-col-md-4 {
